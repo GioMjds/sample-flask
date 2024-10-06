@@ -13,7 +13,7 @@ def user():
     fullname = f"{firstname} {lastname}"
     student_id = request.form['student_id']
     course = request.form['course']
-    block = request.form['block']
+    block = request.form['block'].upper()
     subject = request.form['subject']
     return render_template('user.html', fullname=fullname, student_id=student_id, course=course, block=block, subject=subject)
 

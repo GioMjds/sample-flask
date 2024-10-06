@@ -40,6 +40,11 @@ input, select {
     text-align: center;
 }
 
+input:hover, select:hover {
+    border: none;
+    outline: none;
+}
+
 input[type="submit"] {
     background-color: #4CAF50;
     color: #fff;
@@ -47,8 +52,9 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #317033;
 }
