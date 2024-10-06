@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.container {
+    width: 30%;
+    margin: 30px auto;
+    padding: 0.3em;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container p {
+    width: 75%;
+    padding: 1.4rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    background-color: #62e966;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

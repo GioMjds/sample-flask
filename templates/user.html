@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='user.css') }}">
+    <title>Student Information</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information : </h1>
+        <p>Full Name : {{ fullname }} </p>
+        <p>Student ID : {{ student_id }} </p>
+        <p>Course / Block : {{ course }} {{ block }} </p>
+        <p>Subject : {{ subject }} </p>
+    </div>
+</body>
+</html>

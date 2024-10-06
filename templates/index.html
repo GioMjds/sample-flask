@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Student Information</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Info</h1>
+        <form action="/user" method="post">
+            <label for="firstname">First Name : </label>
+            <input type="text" name="firstname" id="firstname" required>
+            <label for="lastname">Last Name : </label>
+            <input type="text" name="lastname" id="lastname" required>
+            <label for="student_id">Student ID : </label>
+            <input type="text" name="student_id" id="student_id" required>
+            <label for="course">Course : </label>
+            <select name="course" id="course">
+                <option value="BSIT-SD">BSIT-SD</option>
+                <option value="BSIT-BA">BSIT-BA</option>
+                <option value="BSCS-DS">BSCS</option>
+            </select>
+            <label for="block">Block : </label>
+            <input type="text" name="block" id="block" max="2" required>
+            <label for="subject">Subject : </label>
+            <select name="subject" id="subject">
+                <option value="Data Structures and Algorithms">CC 2103</option>
+                <option value="Information Management">CC 2104</option>
+                <option value="Web Systems and Technologies">IT 2102</option>
+                <option value="Human Computer Interaction 1">IT 2103</option>
+                <option value="Integrative Programming and Technologies 1">IT 2104</option>
+                <option value="object Oriented Programming (Python)">IT 2105</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
